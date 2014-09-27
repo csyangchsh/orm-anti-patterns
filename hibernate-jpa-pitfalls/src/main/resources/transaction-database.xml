@@ -57,6 +57,8 @@
 				<entry key="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy" />
 				<entry key="hibernate.generate_statistics" value="true" />
 				<entry key="hibernate.jdbc.batch_size" value="${db.batchSize}" />
+                <entry key="show_sql" value="true"/>
+                <entry key="format_sql" value="true"/>
 			</map>
 		</property>
 	</bean>

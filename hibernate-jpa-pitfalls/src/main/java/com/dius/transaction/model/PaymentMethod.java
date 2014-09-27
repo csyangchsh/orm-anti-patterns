@@ -4,8 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.NotEmpty;
+//import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name = "t_payment_method")
@@ -14,7 +15,7 @@ public class PaymentMethod {
     @GeneratedValue
     private Long id;
 
-    @NotEmpty
+    @NotNull
     private String name;
 
     public Long getId() {
