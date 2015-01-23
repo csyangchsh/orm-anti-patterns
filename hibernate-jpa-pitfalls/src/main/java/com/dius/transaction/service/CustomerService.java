@@ -30,7 +30,8 @@ public class CustomerService {
 
     @Transactional(readOnly = true)
     public List<Customer> findAllCustomers() {
-        return customerRepository.findAll();
+        List<Customer> customers = customerRepository.findAll();
+        return customers;
     }
 
     @Transactional(readOnly = true)
